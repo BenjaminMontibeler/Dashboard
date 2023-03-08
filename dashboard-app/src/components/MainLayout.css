@@ -1,0 +1,31 @@
+ul {
+    list-style-type: none;
+}
+
+.layout_nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    /* background-color: #f1f1f1; */
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    border-right: solid 0.1em;
+    border-right-color: #e8e8e8;
+  }
+
+.navbar{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.nav_content{
+    vertical-align: middle;
+    width: 80%;
+}
+
+.nav_content_one{
+    height: 60%;
+}
