@@ -1,19 +1,125 @@
 .layout_nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 250px;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+}
 
-  .layout_content{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 250px;
-    overflow: hidden;
-    overflow-y: scroll;
-    background-color: white;
-    padding: 24px;
-  }
+.layout_content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 260px;
+  /* overflow: hidden; */
+  overflow-y: scroll;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.main_content{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 10px;
+  height: 100%;
+  padding: 24px;
+}
+
+.side_content{
+  width: 30%;
+  border-left: 1px solid gray;
+  padding-left: 35px;
+  height: 100%;
+  padding: 24px;
+}
+
+.layout_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.icon_container{
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+}
+
+.icon {
+  background-color: gray;
+}
+
+.icon.light {
+  width: 30px;
+  height: 20px;
+  border-radius: 15px;
+}
+
+.icon.notif {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.content_container{
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.content_container.first{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 15px;
+}
+
+.content_container.second{
+  width: 100%;
+  height: 300px;
+}
+
+.numbers_container{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  height: 15%;
+}
+
+.number_container{
+  height: 100%;
+  width: 27%;
+  /* width: 31%; */
+  border-radius: 10px;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.number_container_title{
+  font-weight: 600;
+  font-size: 90%;
+}
+
+.inner_number_container{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.main_numbers{
+  /* font-size: 25px; */
+  font-weight: 600;
+  font-size: 160%;
+}
+
+.side_numbers{
+  /* font-size: 12px; */
+  font-size: 80%;
+}
