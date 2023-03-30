@@ -20,9 +20,6 @@
 }
 
 .main_content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   width: 65%;
   margin-right: 10px;
   height: 100%;
@@ -43,7 +40,7 @@
   justify-content: space-between;
   width: 100%;
   font-weight: 600;
-  /* margin-bottom: 20px; */
+  margin-bottom: 32px;
 }
 
 .icon_container{
@@ -71,6 +68,7 @@
 .content_container{
   border: 1px solid gray;
   border-radius: 10px;
+  margin-bottom: 32px;
 }
 
 .content_container.first{
@@ -245,7 +243,24 @@
 }
 
 .transaction_table{
-  height: 100%;
+  width: 100%;
+  min-width: 600px;
+  overflow-x: auto;
+}
+
+.transaction_table th {
+  text-align: left;
+  padding: 8px;
+}
+
+.transaction_table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.costumer_wrapper {
+  display: flex;
+  align-items: cetner;
 }
 
 .tr_titles{
